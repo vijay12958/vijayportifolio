@@ -3,74 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Vijaya Bhaskar Reddy Pambi | Healthcare Data Analyst</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="container nav-wrapper">
+            <div class="logo">V.B.R. Pambi</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
-        <h1>Hi,I'm [vijaya bhaskar reddy pambi]</h1>
-        <p>A passionate HEALTH CARE DATA ANALYST</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Results-oriented Data Analyst with a Master’s in Bio Health Informatics and 2+ years of experience in healthcare and agricultural
-analytics. Expert in designing advanced Power BI data models, optimizing SQL queries for large datasets, and automating ETL
-workflows using Python. Proven track record of reducing reporting latency by 30% at Excellus BCBS. Combining domain knowledge
-in major EHR systems (Epic, Cerner) and healthcare standards (HIPAA, ICD-10) to drive operational efficiency.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>FHIR-Based Patient Risk Stratification System</h3>
-                <p>Developed an interoperability pipeline using Python to parse FHIR resources (JSON) and aggregate patient records from
-disparate EMR sources into a centralized SQL database.
-– Designed a risk stratification algorithm to classify patients with chronic conditions (e.g., Diabetes) as ”High Risk,” facilitating
-targeted care management interventions.</p>
-                <h3>Healthcare Readmission Prediction Model</h3>
-                <p>Developed a predictive model using Logistic Regression to identify high-risk patients, achieving 85% accuracy in predicting
-hospital readmissions within 30 days.
-– Performed feature engineering on patient demographic and clinical data to isolate key drivers of readmission utilizing
-chi-square feature selection tests.</p>
-                <a href="#">View Link</a>
+    <header id="hero">
+        <div class="container hero-content">
+            <h1>Vijaya Bhaskar Reddy Pambi</h1>
+            <h2>Healthcare Data Analyst</h2>
+            <p>Specializing in Claims Analytics, Predictive Modeling, and FHIR Interoperability.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
             </div>
-            </div>
-    </section>
+        </div>
+    </header>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume-container">
-            <img src="resume-image.jpg.png" alt="Resume Preview" class="resume-img">
-            <br>
-            <a href="resume.pdf" download class="btn">Download Resume (PDF)</a>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a <strong>Healthcare Data Analyst</strong> based in Syracuse, NY, with a Master's in Bio Health Informatics. 
+                    I bridge the gap between complex clinical data and operational efficiency. 
+                </p>
+                <p>
+                    Currently, I am leveraging data to reduce reporting latency at <strong>Excellus BCBS</strong>. 
+                    I am actively looking for full-time roles in <strong>Healthcare Analytics, Clinical Data Analysis, and Population Health</strong> 
+                    where I can apply my skills in SQL, Python, Power BI, and HL7/FHIR standards.
+                </p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:vijaypambi015@gmail.com">vijay's gmail</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/bhaskar-pambi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">connect on Linkedin</a></p>
+    <section id="experience" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern</h3>
+                        <h4>Excellus BlueCross BlueShield | Rochester, NY</h4>
+                        <ul>
+                            <li>Architected "Claims Productivity Dashboard" in Power BI, reducing reporting latency by 30%.</li>
+                            <li>Optimized SQL queries to aggregate millions of claims records, improving speed by 40%.</li>
+                            <li>Automated Python validation scripts to identify provider eligibility discrepancies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Oct 2022 - Dec 2023</div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst</h3>
+                        <h4>Vasista Crop Science | India</h4>
+                        <ul>
+                            <li>Engineered Python ETL scripts to standardize large datasets, improving retrieval speed by 25%.</li>
+                            <li>Developed interactive dashboards to track regional distribution performance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2022 - Aug 2022</div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern</h3>
+                        <h4>SMS Technologies | India</h4>
+                        <ul>
+                            <li>Executed SQL queries to extract and transform customer data for system migration.</li>
+                            <li>Built dynamic Excel visualizations to support customer retention strategies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <h3>🏥 Readmission Prediction Model</h3>
+                    <p>Machine Learning model predicting 30-day hospital readmissions for diabetic patients with 85% accuracy.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Scikit-Learn</span><span>Logistic Regression</span>
+                    </div>
+                    <a href="./1_Readmission_Prediction" class="btn small-btn">View Code & Results</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>🔗 FHIR Interoperability Pipeline</h3>
+                    <p>Python ETL pipeline to parse nested FHIR (JSON) patient bundles into SQL-ready structured formats.</p>
+                    <div class="tech-stack">
+                        <span>Python</span><span>JSON</span><span>HL7 FHIR</span>
+                    </div>
+                    <a href="./2_FHIR_Pipeline" class="btn small-btn">View Code & Results</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>📊 Claims Productivity Dashboard</h3>
+                    <p>Power BI & SQL solution tracking Provider Costs, Denials, and Utilization metrics to improve efficiency.</p>
+                    <div class="tech-stack">
+                        <span>Power BI</span><span>SQL</span><span>Data Modeling</span>
+                    </div>
+                    <a href="./3_Claims_Dashboard" class="btn small-btn">View Project Data</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card">
+                <h3>Master of Science in Bio Health Informatics</h3>
+                <p>State University of New York at Oswego | 2024 - 2025</p>
+            </div>
+            <div class="education-card">
+                <h3>Bachelor of Science (Hons.) in Agriculture</h3>
+                <p>Lovely Professional University, India | 2019 - 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I am currently available for interviews. Feel free to reach out!</p>
+            
+            <div class="contact-links">
+                <a href="mailto:vijaypambi015@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> vijaypambi015@gmail.com
+                </a>
+                <a href="tel:+18065595917" class="contact-item">
+                    <i class="fas fa-phone"></i> +1 (806) 559-5917
+                </a>
+                <a href="https://www.linkedin.com/in/bhaskar-pambi" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i> LinkedIn Profile
+                </a>
+                <a href="https://github.com/vijay12958" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+                <a href="#" target="_blank" class="contact-item">
+                    <i class="fas fa-briefcase"></i> Indeed Profile
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 [vijaya bhaskar reddy pambi]</p>
+        <div class="container">
+            <p>&copy; 2025 Vijaya Bhaskar Reddy Pambi. Hosted on GitHub Pages.</p>
+        </div>
     </footer>
 
 </body>
-
 </html>
-
-
