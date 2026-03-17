@@ -1,370 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vijaya Bhaskar Reddy Pambi | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">V.B.R. Pambi</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijaya Bhaskar Reddy Pambi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">V.B.R. Pambi</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#dashboards">Dashboards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">V.B.R. Pambi</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#dashboards" onclick="toggleMenu()">Dashboards</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Vijaya Bhaskar Reddy Pambi" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vijaya Bhaskar Reddy Pambi</h1>
+      <p class="section__text__p2">Healthcare Data Analyst</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/bhaskar-pambi/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-'" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>3+ Years <br />Healthcare Analytics</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>M.Sc. BioHealth Informatics<br />B.Sc. Agriculture</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a <strong>Healthcare Data Analyst</strong> based in Syracuse, NY, bridging the gap between clinical
+            data and operational efficiency.
+            Currently reducing reporting latency at <strong>Excellus BCBS</strong>, I specialize in Claims Analysis,
+            FHIR Interoperability, and Predictive Modeling.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">My Professional</p>
+    <h1 class="title">Work Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container" style="text-align: left; padding: 2rem;">
+          <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst
+            Intern</h2>
+          <h3 style="color: #555;">Excellus BlueCross BlueShield | Rochester, NY</h3>
+          <p style="font-style: italic; margin-bottom: 1rem;">Jan 2025 - Dec 2025</p>
+          <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Architected "Claims Productivity Dashboard" in Power BI, reducing manual reporting latency by 30%.</li>
+            <li>Optimized SQL stored procedures to aggregate millions of claims, improving query time by 40%.</li>
+            <li>Automated Python validation scripts to identify provider eligibility discrepancies.</li>
+          </ul>
+        </div>
+
+        <div class="details-container" style="text-align: left; padding: 2rem;">
+          <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst</h2>
+          <h3 style="color: #555;">Vasista Crop Science | India</h3>
+          <p style="font-style: italic; margin-bottom: 1rem;">Oct 2022 - Dec 2023</p>
+          <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Engineered Python ETL scripts to standardize crop yield data, improving retrieval speed by 25%.</li>
+            <li>Developed Power BI dashboards to track regional distribution and identify supply chain bottlenecks.</li>
+            <li>Conducted statistical trend analysis to optimize inventory planning.</li>
+          </ul>
+        </div>
+
+        <div class="details-container" style="text-align: left; padding: 2rem;">
+          <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst
+            Intern</h2>
+          <h3 style="color: #555;">SMS Technologies | India</h3>
+          <p style="font-style: italic; margin-bottom: 1rem;">Jan 2022 - Aug 2022</p>
+          <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Executed SQL queries to transform customer data, ensuring 100% integrity during migration.</li>
+            <li>Built dynamic Excel pivot tables to visualize customer churn patterns for senior management.</li>
+            <li>Pre-processed raw datasets using Python to prepare data for machine learning.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#skills'" />
+  </section>
+
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Analysis</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>SQL</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>Excel</h3>
+                <p>Advanced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>Power BI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Healthcare Tech</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>HL7 / FHIR</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>Claims Data</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>ETL Pipelines</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+              <div>
+                <h3>Tableau</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Readmission Model" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Readmission Prediction AI</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/1_Readmission_Prediction'">
+              View Code
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="FHIR Pipeline" class="project-img"
+              onerror="this.src='./assets/checkmark.png'" />
+          </div>
+          <h2 class="experience-sub-title project-title">FHIR ETL Pipeline</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/2_FHIR_Pipeline'">
+              View Code
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Claims Dashboard" class="project-img"
+              onerror="this.src='./assets/checkmark.png'" />
+          </div>
+          <h2 class="experience-sub-title project-title">Claims Dashboard</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/3_Claims_Dashboard'">
+              View Data
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#dashboards'" />
+  </section>
+
+  <section id="dashboards">
+    <p class="section__text__p1">Explore My Analytics</p>
+    <h1 class="title">Power BI Dashboards</h1>
+    <div class="experience-details-container">
+      <div class="about-containers" style="flex-direction: column; align-items: center; width: 100%;">
+
+        <div class="details-container color-container"
+          style="width: 100%; max-width: 1000px; margin: 0 auto; text-align: left;">
+          <h2 class="experience-sub-title project-title" style="text-align: center;">Sales & Procurement Dashboard</h2>
+
+          <!-- ====== CAROUSEL START ====== -->
+          <div class="carousel-container">
+            <div class="carousel-slide fade">
+              <img src="./assets/dashboard-1.png" alt="Sales Dashboard View 1" />
+            </div>
+            <div class="carousel-slide fade">
+              <img src="./assets/dashboard-2.png" alt="Sales Dashboard View 2" />
+            </div>
+            <div class="carousel-slide fade">
+              <img src="./assets/dashboard-3.png" alt="Sales Dashboard View 3" />
+            </div>
+            <div class="carousel-slide fade">
+              <img src="./assets/dashboard-4.png" alt="Sales Dashboard View 4" />
+            </div>
+            <div class="carousel-slide fade">
+              <img src="./assets/dashboard-5.png" alt="Sales Dashboard View 5" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev-btn" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next-btn" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center; padding-top: 10px;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+          <!-- ====== CAROUSEL END ====== -->
+
+          <div style="padding: 1rem 2rem;">
+            <p style="margin-bottom: 1rem; color: #333; line-height: 1.6;">
+              <strong>Overview:</strong> This comprehensive Sales & Procurement Power BI dashboard visualizes overall
+              spend, supplier performance, payment analysis, and category margins. Use the arrows above to preview the
+              different interactive pages.
+            </p>
+            <p style="margin-bottom: 1.5rem; color: #555;">
+              <em>Note: This is a visual preview. To interact with the original Power BI dashboard exactly as I built
+                it, please download the raw file below and open it with Power BI Desktop.</em>
+            </p>
+            <div class="btn-container" style="justify-content: center; margin-bottom: 1rem;">
+              <!-- Link points to the exact PBIX file now located in assets -->
+              <button class="btn btn-color-2"
+                onclick="window.open('./assets/Sales procurment dash board.pbix', '_blank')"
+                style="width: 18rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download .pbix File
+              </button>
+            </div>
+
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container" style="flex-wrap: wrap; gap: 2rem;">
+
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"
+          onclick="location.href='mailto:vijaypambi015@gmail.com'" />
+        <p><a href="mailto:vijaypambi015@gmail.com">vijaypambi015@gmail.com</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"
+          onclick="window.open('https://www.linkedin.com/in/bhaskar-pambi/', '_blank')" />
+        <p><a href="https://www.linkedin.com/in/bhaskar-pambi/" target="_blank">LinkedIn</a></p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/checkmark.png" alt="Phone icon" class="icon contact-icon" style="cursor: default;" />
+        <p>+1 (806) 559-5917</p>
+      </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon"
+          onclick="window.open('https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-', '_blank')" />
+        <p><a href="https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-" target="_blank">GitHub</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#dashboards">Dashboards</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">V.B.R. Pambi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Vijaya Bhaskar Reddy Pambi" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vijaya Bhaskar Reddy Pambi</h1>
-        <p class="section__text__p2">Healthcare Data Analyst</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/bhaskar-pambi/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-'"
-          />
-        </div>
-      </div>
-    </section>
-    
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>3+ Years <br />Healthcare Analytics</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>M.Sc. BioHealth Informatics<br />B.Sc. Agriculture</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am a <strong>Healthcare Data Analyst</strong> based in Syracuse, NY, bridging the gap between clinical data and operational efficiency. 
-              Currently reducing reporting latency at <strong>Excellus BCBS</strong>, I specialize in Claims Analysis, FHIR Interoperability, and Predictive Modeling.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#experience'"
-      />
-    </section>
+    <p>Copyright &#169; 2025 Vijaya Bhaskar Reddy Pambi.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-    <section id="experience">
-      <p class="section__text__p1">My Professional</p>
-      <h1 class="title">Work Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container" style="text-align: left; padding: 2rem;">
-            <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst Intern</h2>
-            <h3 style="color: #555;">Excellus BlueCross BlueShield | Rochester, NY</h3>
-            <p style="font-style: italic; margin-bottom: 1rem;">Jan 2025 - Dec 2025</p>
-            <ul style="list-style-type: disc; margin-left: 20px;">
-              <li>Architected "Claims Productivity Dashboard" in Power BI, reducing manual reporting latency by 30%.</li>
-              <li>Optimized SQL stored procedures to aggregate millions of claims, improving query time by 40%.</li>
-              <li>Automated Python validation scripts to identify provider eligibility discrepancies.</li>
-            </ul>
-          </div>
-
-          <div class="details-container" style="text-align: left; padding: 2rem;">
-            <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst</h2>
-            <h3 style="color: #555;">Vasista Crop Science | India</h3>
-            <p style="font-style: italic; margin-bottom: 1rem;">Oct 2022 - Dec 2023</p>
-            <ul style="list-style-type: disc; margin-left: 20px;">
-              <li>Engineered Python ETL scripts to standardize crop yield data, improving retrieval speed by 25%.</li>
-              <li>Developed Power BI dashboards to track regional distribution and identify supply chain bottlenecks.</li>
-              <li>Conducted statistical trend analysis to optimize inventory planning.</li>
-            </ul>
-          </div>
-
-          <div class="details-container" style="text-align: left; padding: 2rem;">
-            <h2 class="experience-sub-title" style="font-size: 1.2rem; color: black; font-weight: bold;">Data Analyst Intern</h2>
-            <h3 style="color: #555;">SMS Technologies | India</h3>
-            <p style="font-style: italic; margin-bottom: 1rem;">Jan 2022 - Aug 2022</p>
-            <ul style="list-style-type: disc; margin-left: 20px;">
-              <li>Executed SQL queries to transform customer data, ensuring 100% integrity during migration.</li>
-              <li>Built dynamic Excel pivot tables to visualize customer churn patterns for senior management.</li>
-              <li>Pre-processed raw datasets using Python to prepare data for machine learning.</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#skills'"
-      />
-    </section>
-
-    <section id="skills">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Technical Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Analysis</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>Python</h3><p>Advanced</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>SQL</h3><p>Advanced</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>Excel</h3><p>Advanced</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>Power BI</h3><p>Intermediate</p></div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Healthcare Tech</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>HL7 / FHIR</h3><p>Intermediate</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>Claims Data</h3><p>Intermediate</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>ETL Pipelines</h3><p>Intermediate</p></div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                <div><h3>Tableau</h3><p>Basic</p></div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Readmission Model"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Readmission Prediction AI</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/1_Readmission_Prediction'"
-              >
-                View Code
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png" 
-                alt="FHIR Pipeline"
-                class="project-img"
-                onerror="this.src='./assets/checkmark.png'"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">FHIR ETL Pipeline</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/2_FHIR_Pipeline'"
-              >
-                View Code
-              </button>
-            </div>
-          </div>
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Claims Dashboard"
-                class="project-img"
-                onerror="this.src='./assets/checkmark.png'"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Claims Dashboard</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-/tree/Vijay12958/3_Claims_Dashboard'"
-              >
-                View Data
-              </button>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#contact'"
-      />
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container" style="flex-wrap: wrap; gap: 2rem;">
-        
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-            onclick="location.href='mailto:vijaypambi015@gmail.com'"
-          />
-          <p><a href="mailto:vijaypambi015@gmail.com">vijaypambi015@gmail.com</a></p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-            onclick="window.open('https://www.linkedin.com/in/bhaskar-pambi/', '_blank')"
-          />
-          <p><a href="https://www.linkedin.com/in/bhaskar-pambi/" target="_blank">LinkedIn</a></p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/checkmark.png"
-            alt="Phone icon"
-            class="icon contact-icon"
-            style="cursor: default;"
-          />
-          <p>+1 (806) 559-5917</p>
-        </div>
-
-        <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="GitHub icon"
-            class="icon contact-icon"
-            onclick="window.open('https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-', '_blank')"
-          />
-          <p><a href="https://github.com/vijay12958/Healthcare-Data-Analytics-Portfolio-" target="_blank">GitHub</a></p>
-        </div>
-
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Vijaya Bhaskar Reddy Pambi.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
